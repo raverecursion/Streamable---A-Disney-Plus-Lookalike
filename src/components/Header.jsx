@@ -40,7 +40,7 @@ function Header() {
 
 export default Header;
 const Nav = styled.nav`
-  height: 70px;
+  height: 80px;
   background-color: #090b13;
   display: flex;
   align-items: center;
