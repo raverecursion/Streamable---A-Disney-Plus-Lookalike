@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import ImgSlider from "./ImgSlider";
-import Viewers from "./Viewers"
+import Viewers from "./Viewers";
+import Movies from "./Movies";
 function Home() {
   return (
     <Container>
       <ImgSlider />
-      <Viewers/>
+      <Viewers />
+      <Movies />
     </Container>
   );
 }
@@ -29,5 +31,5 @@ const Container = styled.main`
     bottom: 0;
     z-index: -1;
   }
-  overflow-x:hidden;
+  overflow-x: hidden;
 `;

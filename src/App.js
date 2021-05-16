@@ -2,6 +2,10 @@ import React from "react";
 // Components
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
+import Detail from "./components/Detail.jsx";
+// Router
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 // Styles
 import "./App.css";
 <link
@@ -10,9 +14,18 @@ import "./App.css";
 />;
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Home />
+    <div>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/detail">
+            <Detail />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
