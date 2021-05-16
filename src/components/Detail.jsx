@@ -27,7 +27,15 @@ function Detail() {
       </Controls>
       <SubTitle>2018 * 7m * Animation~{"\n"}</SubTitle>
 
-      <Description>Lorem ipsum dolor sit amet~{"\n"}, consectetur adipiscing elit. Nam at elit risus. Curabitur condimentum mattis felis, ac congue purus aliquet faucibus. Etiam nisl est, vehicula et feugiat fringilla, aliquet quis urna. Quisque convallis sit amet sapien a volutpat. Fusce elementum, ex ac auctor blandit, magna nunc iaculis turpis, eu cursus elit urna et est. Praesent volutpat euismod dui pretium consectetur. Praesent mi quam, egestas ut vestibulum nec, ullamcorper at augue.</Description>
+      <Description>
+        Lorem ipsum dolor sit amet~{"\n"}, consectetur adipiscing elit. Nam at
+        elit risus. Curabitur condimentum mattis felis, ac congue purus aliquet
+        faucibus. Etiam nisl est, vehicula et feugiat fringilla, aliquet quis
+        urna. Quisque convallis sit amet sapien a volutpat. Fusce elementum, ex
+        ac auctor blandit, magna nunc iaculis turpis, eu cursus elit urna et
+        est. Praesent volutpat euismod dui pretium consectetur. Praesent mi
+        quam, egestas ut vestibulum nec, ullamcorper at augue.
+      </Description>
     </Container>
   );
 }
@@ -38,7 +46,7 @@ const Container = styled.div`
   min-height: calc(100vh - 70px);
   padding: 0 calc(3.5vw +5px);
   position: relative;
-  margin-left:45px;
+  margin-left: 45px;
 `;
 
 const Background = styled.div`
@@ -61,6 +69,7 @@ const ImageTitle = styled.div`
   min-height: 170px;
   min-width: 200px;
   width: 35vw;
+  margin-top: 60px;
   img {
     width: 100%;
     height: 100%;
@@ -128,16 +137,18 @@ const GroupWatchButton = styled(AddToWatchlistButton)`
 `;
 
 const SubTitle = styled.div`
-background-color:(0,0,0);
-color: (249,249,249,0);
-font-size:15px;
-min-height:20px;
-margin-top:26px;
+  background-color: (0, 0, 0);
+  color: (249, 249, 249, 0);
+  font-size: 15px;
+  min-height: 20px;
+  margin-top: 26px;
 `;
 
 const Description = styled.div`
-line-height:1.4;
-font-size:20px;
-margin-top:16px;
-color: (249, 249, 249);
-`
+  line-height: 1.4;
+  font-size: 20px;
+  margin-top: 16px;
+  color: (249, 249, 249);
+  max-width: 760px;
+
+`;
