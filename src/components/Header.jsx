@@ -1,39 +1,110 @@
-import React from "react";
+import { React, useEffect } from "react";
+import { auth, provider } from "../firebase.js";
+import { useHistory, Link } from "react-router-dom";
+
+import {
+  selectUserName,
+  selectUserEmail,
+  selectUserPhoto,
+  setUserLogin,
+  setSignOut,
+} from "../features/user/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 // Styles
 import styled from "styled-components";
 
 function Header() {
+  const dispatch = useDispatch();
+  const history = useHistory();
+  const userName = useSelector(selectUserName);
+  const userPhoto = useSelector(selectUserPhoto);
+  const userEmail = useSelector(selectUserEmail);
+
+  useEffect(() => {
+    auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        dispatch(
+          setUserLogin({
+            name: user.displayName,
+            email: user.email,
+            photo: user.photoURL,
+          })
+        );
+        history.push("/");
+      }
+    });
+  }, []);
+
+  const signInWithGoogle = () => {
+    auth.signInWithPopup(provider).then((result) => {
+      console.log(result);
+      let user = result.user;
+
+      dispatch(
+        setUserLogin({
+          name: user.displayName,
+          email: user.email,
+          photo: user.photoURL,
+        })
+      );
+    });
+  };
+
+  const signOut = () => {
+    auth.signOut().then(
+      function () {
+        dispatch(setSignOut);
+        // history.push("/")
+        window.location.replace("http://localhost:3000/");
+        console.log("Signout Succesfull");
+      },
+      function (error) {
+        console.log("Signout Failed");
+      }
+    );
+  };
+
   return (
     <Nav>
       <Logo src="/images/logo.svg" />
       <NavMenu>
-        <a>
+        <Link to="/">
           <img alt="home" src="/images/home-icon.svg" />
           <span>HOME</span>
-        </a>
-        <a>
+        </Link>
+        <Link to="/">
           <img alt="search" src="/images/search-icon.svg" />
           <span>SEARCH</span>
-        </a>
-        <a>
+        </Link>
+        <Link to="/">
           <img alt="watchlist" src="/images/watchlist-icon.svg" />
           <span>WATCHLIST</span>
-        </a>
-        <a>
+        </Link>
+        <Link to="/">
           <img alt="originals" src="/images/original-icon.svg" />
           <span>ORIGINALS</span>
-        </a>
-        <a>
+        </Link>
+        <Link onClick={signOut} to="/">
           <img alt="movies" src="/images/movie-icon.svg" />
           <span>MOVIES</span>
-        </a>
-        <a>
+        </Link>
+        <Link to="/">
           <img alt="series" src="/images/series-icon.svg" />
           <span>SERIES</span>
-        </a>
+        </Link>
       </NavMenu>
-      <UserImg alt="profile image" src=""></UserImg>
+      {!userName ? (
+        <Login onClick={signInWithGoogle}>Login</Login>
+      ) : (
+        <>
+          <UserImg
+            alt="profile image"
+            onClick={signOut}
+            src={`${userPhoto}`}
+          ></UserImg>
+        </>
+      )}
     </Nav>
   );
 }
@@ -46,7 +117,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 0 36px;
   justify-content: space-between;
-  overflow-x:hidden;
+  overflow-x: hidden;
 `;
 
 const Logo = styled.img`
@@ -54,8 +125,11 @@ const Logo = styled.img`
 `;
 
 const NavMenu = styled.div`
+  position: relative;
   display: flex;
   a {
+    color: white;
+    text-decoration: none;
     display: flex;
     align-items: center;
     padding: 0 12px;
@@ -90,7 +164,7 @@ const NavMenu = styled.div`
       }
     }
   }
-  overflow-x:hidden;
+  overflow-x: hidden;
 `;
 
 const UserImg = styled.img`
@@ -98,4 +172,21 @@ const UserImg = styled.img`
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+`;
+
+const Login = styled.div`
+  border: 2px solid #f9f9f9;
+  border-radius: 8%;
+  padding: 8px 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    border-color: transparent;
+  }
 `;

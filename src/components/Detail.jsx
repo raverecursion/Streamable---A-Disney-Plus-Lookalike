@@ -1,46 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import styled from "styled-components";
-function Detail() {
+import { useParams } from "react-router-dom";
+import db from "../firebase";
+
+function Detail(props) {
+  const { id } = useParams();
+  const [movie, setMovie] = useState();
+  useEffect(() => {
+    // Grab the movie info from db
+    db.collection("movies")
+      .doc(id)
+      .get()
+      .then((doc) => {
+        if (doc.exists) {
+          // save the movie to the state
+          setMovie(doc.data());
+        } else {
+          // redirect to home page
+          console.log("no such document in firebase 🔥");
+        }
+      });
+  }, [id]);
+  console.log("Movie is", movie);
+  // console.log(id);
+
   return (
     <Container>
-      <Background>
-        <img alt="bao background" src="./images/backg-1.jpg" />
-      </Background>
-      <ImageTitle>
-        <img src="./images/backg-1-title.png" />
-      </ImageTitle>
-      <Controls>
-        <PlayButton>
-          <img src="./images/play-icon-black.png" />
-          <span>PLAY</span>
-        </PlayButton>
-        <TrailerButton>
-          <img src="./images/play-icon-white.png" />
-          <span>Trailer</span>
-        </TrailerButton>
-        <AddToWatchlistButton>
-          <span>+</span>
-        </AddToWatchlistButton>
-        <GroupWatchButton>
-          <img src="/images/group-icon.png" />"
-        </GroupWatchButton>
-      </Controls>
-      <SubTitle>2018 * 7m * Animation~{"\n"}</SubTitle>
+      {movie ? (
+        <React.Fragment>
+          <Background>
+            <img alt="bao background" src={movie.backgroundImg} />
+          </Background>
+          <ImageTitle>
+            <img src={movie.titleImg} />
+          </ImageTitle>
+          <Controls>
+            <PlayButton>
+              <img src="/images/play-icon-black.png" />
+              <span>PLAY</span>
+            </PlayButton>
+            <TrailerButton>
+              <img src="/images/play-icon-white.png" />
+              <span>Trailer</span>
+            </TrailerButton>
+            <AddToWatchlistButton>
+              <span>+</span>
+            </AddToWatchlistButton>
+            <GroupWatchButton>
+              <img src="/images/group-icon.png" />"
+            </GroupWatchButton>
+          </Controls>
+          <SubTitle>{movie.subtitle}</SubTitle>
 
-      <Description>
-        Lorem ipsum dolor sit amet~{"\n"}, consectetur adipiscing elit. Nam at
-        elit risus. Curabitur condimentum mattis felis, ac congue purus aliquet
-        faucibus. Etiam nisl est, vehicula et feugiat fringilla, aliquet quis
-        urna. Quisque convallis sit amet sapien a volutpat. Fusce elementum, ex
-        ac auctor blandit, magna nunc iaculis turpis, eu cursus elit urna et
-        est. Praesent volutpat euismod dui pretium consectetur. Praesent mi
-        quam, egestas ut vestibulum nec, ullamcorper at augue.
-      </Description>
+          <Description>{movie.description}</Description>
+        </React.Fragment>
+      ) : (
+        <p> loading from firebase</p>
+      )}
     </Container>
   );
 }
-
-export default Detail;
 
 const Container = styled.div`
   min-height: calc(100vh - 70px);
@@ -150,5 +170,6 @@ const Description = styled.div`
   margin-top: 16px;
   color: (249, 249, 249);
   max-width: 760px;
-
 `;
+
+export default Detail;
