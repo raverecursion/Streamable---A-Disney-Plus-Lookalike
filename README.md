@@ -4,7 +4,7 @@ This is a fully functional Disney+ lookalike with streaming capabilities.
 
 Simply add new entries via firebase (*youtube / vimeo / custom video support*)
 
-A database sample provided for an easy setup
+A database collection sample provided for an easy setup
 
 # Built with ReactJS 
 
@@ -46,7 +46,25 @@ A database sample provided for an easy setup
 
 
 ## Usage
+- import dbsample.json to your firebase store
+- add new entries via fb store
 - react-scripts start
+```
+backgroundImg: "http://yourdomain.com/movieBackgroundImg.jpg"
+cardImg: "http://yourdomain.com/movieCardImg.jpg"
+description: string
+id: id
+subTitle: subtitle
+title: title
+titleImg: "http://yourdomain.com/movieTitleImg.jpg"
+type: categoryType
+channel:"youtube", "vimeo", custom"
+trailerID: "i5qOzqD9Rms", "http://yourdomain.com/movietrailer.mp4"
+movieID: "i9qnzqD4Fms", "http://yourdomain.com/movie.mp4"
+```
+
+
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
