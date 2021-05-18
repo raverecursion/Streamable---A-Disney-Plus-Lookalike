@@ -15,12 +15,12 @@ A database collection sample provided for an easy setup
 # Installation
 
 - Sign up to Firebase
-- import dbsample.json to your firebase store
-- npm install
-- react-scripts start
+- import ```dbsample.json``` to your firebase store
+- ```npm install```
+- ```react-scripts start```
 
 
-## Database
+### Database description
 
 ```
 id: id
@@ -38,7 +38,7 @@ movieID: "i9qnzqD4Fms", "url/movie.mp4"
 
 
 
-# Dependencies
+## Dependencies
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
