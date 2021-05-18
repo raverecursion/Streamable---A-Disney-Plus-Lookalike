@@ -1,32 +1,24 @@
-import React from "react";
-// Components
-import Header from "./components/Header.jsx";
-import Home from "./components/Home.jsx";
-import Detail from "./components/Detail.jsx";
-import Login from "./components/Login.jsx";
-// Router
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-// Styles
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Header from "./components/Header";
 import "./App.css";
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"
-  rel="stylesheet"
-/>;
+import Home from "./components/Home";
+import Detail from "./components/Detail";
+
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/login">
+          <Route exact path="/">
             <Login />
+          </Route>
+          <Route path="/home">
+            <Home />
           </Route>
           <Route path="/detail/:id">
             <Detail />
-          </Route>
-          <Route exact path="/">
-            <Home />
           </Route>
         </Switch>
       </Router>
