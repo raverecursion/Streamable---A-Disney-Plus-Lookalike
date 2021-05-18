@@ -8,11 +8,10 @@ import "react-modal-video/css/modal-video.min.css";
 // Database
 import db from "../firebase";
 
-// TODO: 
+// TODO:
 // Resolve on page refresh
 // Uncaught SyntaxError: Unexpected token '<'
-// 
-
+//
 
 const Detail = (props) => {
   const [isOpen, setOpen] = useState(false);
@@ -37,46 +36,50 @@ const Detail = (props) => {
 
   return (
     <Container>
-      <Background>
-        <img alt={detailData.title} src={detailData.backgroundImg} />
-      </Background>
-
-      <ImageTitle>
-        <img alt={detailData.title} src={detailData.titleImg} />
-      </ImageTitle>
-      <ContentMeta>
-        <Controls>
-          <Player onClick={() => setOpen(true)}>
-            <img src="/images/play-icon-black.png" alt="" />
-            <span>Play</span>
-          </Player>
-          <Trailer onClick={() => setOpen(true)}>
-            <img src="/images/play-icon-white.png" alt="" />
-            <span>Trailer</span>
-          </Trailer>
-          <AddList>
-            <span />
-            <span />
-          </AddList>
-          <GroupWatch>
-            <div>
-              <img src="/images/group-icon.png" alt="" />
-            </div>
-          </GroupWatch>
-        </Controls>
-        <SubTitle>{detailData.subTitle}</SubTitle>
-        <Description>{detailData.description}</Description>
-      </ContentMeta>
-
-      <ModalVideo
-        fs="0"
-        dismissBtnMessage="Close the modal by clicking here"
-        channel={`${detailData.channel}`}
-        autoplay
-        isOpen={isOpen}
-        videoId={`${detailData.trailerID}`}
-        onClose={() => setOpen(false)}
-      />
+      {detailData ? (
+        <div>
+          <Background>
+            <img alt={detailData.title} src={detailData.backgroundImg} />
+          </Background>
+          <ImageTitle>
+            <img alt={detailData.title} src={detailData.titleImg} />
+          </ImageTitle>
+          <ContentMeta>
+            <Controls>
+              <Player onClick={() => setOpen(true)}>
+                <img src="/images/play-icon-black.png" alt="" />
+                <span>Play</span>
+              </Player>
+              <Trailer onClick={() => setOpen(true)}>
+                <img src="/images/play-icon-white.png" alt="" />
+                <span>Trailer</span>
+              </Trailer>
+              <AddList>
+                <span />
+                <span />
+              </AddList>
+              <GroupWatch>
+                <div>
+                  <img src="/images/group-icon.png" alt="" />
+                </div>
+              </GroupWatch>
+            </Controls>
+            <SubTitle>{detailData.subTitle}</SubTitle>
+            <Description>{detailData.description}</Description>
+          </ContentMeta>
+          <ModalVideo
+            fs="0"
+            dismissBtnMessage="Close the modal by clicking here"
+            channel={`${detailData.channel}`}
+            autoplay
+            isOpen={isOpen}
+            videoId={`${detailData.trailerID}`}
+            onClose={() => setOpen(false)}
+          />{" "}
+        </div>
+      ) : (
+        <p>...loading</p>
+      )}
     </Container>
   );
 };
