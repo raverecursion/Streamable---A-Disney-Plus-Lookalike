@@ -8,6 +8,12 @@ import "react-modal-video/css/modal-video.min.css";
 // Database
 import db from "../firebase";
 
+// TODO: 
+// Resolve on page refresh
+// Uncaught SyntaxError: Unexpected token '<'
+// 
+
+
 const Detail = (props) => {
   const [isOpen, setOpen] = useState(false);
   const { id } = useParams();
