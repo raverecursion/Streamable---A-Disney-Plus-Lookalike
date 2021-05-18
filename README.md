@@ -12,6 +12,31 @@ A database collection sample provided for an easy setup
 ![Alt text](/screenshot.png?raw=true "Screenshot")
 
 
+# Installation
+
+- Sign up to Firebase
+- import dbsample.json to your firebase store
+- npm install
+- react-scripts start
+
+
+## Database
+
+```
+id: id
+subTitle: subtitle
+title: title
+description: string
+type: string
+backgroundImg: "url/movieBackgroundImg.jpg"
+cardImg: "url/movieCardImg.jpg"
+titleImg: "url/movieTitleImg.jpg"
+channel: "youtube", "vimeo", custom"
+trailerID: "i5qOzqD9Rms", "url/movietrailer.mp4"
+movieID: "i9qnzqD4Fms", "url/movie.mp4"
+```
+
+
 
 # Dependencies
     "@reduxjs/toolkit": "^1.5.1",
@@ -36,33 +61,6 @@ A database collection sample provided for an easy setup
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.3",
     "web-vitals": "^1.0.1"
-
-
-
-## Installation
-
-- Sign up to Firebase
-- npm install
-
-
-## Usage
-- import dbsample.json to your firebase store
-- add new entries via fb store
-- react-scripts start
-```
-backgroundImg: "http://yourdomain.com/movieBackgroundImg.jpg"
-cardImg: "http://yourdomain.com/movieCardImg.jpg"
-description: string
-id: id
-subTitle: subtitle
-title: title
-titleImg: "http://yourdomain.com/movieTitleImg.jpg"
-type: categoryType
-channel:"youtube", "vimeo", custom"
-trailerID: "i5qOzqD9Rms", "http://yourdomain.com/movietrailer.mp4"
-movieID: "i9qnzqD4Fms", "http://yourdomain.com/movie.mp4"
-```
-
 
 
 
