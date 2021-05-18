@@ -55,8 +55,8 @@ function Header() {
     auth.signOut().then(
       function () {
         dispatch(setSignOut);
-        // history.push("/")
-        window.location.replace("http://localhost:3000/");
+        history.push("/")
+        // window.location.replace("http://localhost:3000/");
         console.log("Signout Succesfull");
       },
       function (error) {
@@ -67,30 +67,30 @@ function Header() {
 
   return (
     <Nav>
-      <Logo src="/images/logo.svg" />
+      <Logo src="images/logo.svg" />
       <NavMenu>
         <Link to="/">
-          <img alt="home" src="/images/home-icon.svg" />
+          <img alt="home" src="images/home-icon.svg" />
           <span>HOME</span>
         </Link>
         <Link to="/">
-          <img alt="search" src="/images/search-icon.svg" />
+          <img alt="search" src="images/search-icon.svg" />
           <span>SEARCH</span>
         </Link>
         <Link to="/">
-          <img alt="watchlist" src="/images/watchlist-icon.svg" />
+          <img alt="watchlist" src="images/watchlist-icon.svg" />
           <span>WATCHLIST</span>
         </Link>
         <Link to="/">
-          <img alt="originals" src="/images/original-icon.svg" />
+          <img alt="originals" src="images/original-icon.svg" />
           <span>ORIGINALS</span>
         </Link>
         <Link onClick={signOut} to="/">
-          <img alt="movies" src="/images/movie-icon.svg" />
+          <img alt="movies" src="images/movie-icon.svg" />
           <span>MOVIES</span>
         </Link>
         <Link to="/">
-          <img alt="series" src="/images/series-icon.svg" />
+          <img alt="series" src="images/series-icon.svg" />
           <span>SERIES</span>
         </Link>
       </NavMenu>

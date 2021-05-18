@@ -33,22 +33,22 @@ function Detail(props) {
             <img alt="bao background" src={movie.backgroundImg} />
           </Background>
           <ImageTitle>
-            <img src={movie.titleImg} />
+            <img alt="" src={movie.titleImg} />
           </ImageTitle>
           <Controls>
             <PlayButton>
-              <img src="/images/play-icon-black.png" />
+              <img alt="" src="images/play-icon-black.png" />
               <span>PLAY</span>
             </PlayButton>
             <TrailerButton>
-              <img src="/images/play-icon-white.png" />
+              <img alt="" src="images/play-icon-white.png" />
               <span>Trailer</span>
             </TrailerButton>
             <AddToWatchlistButton>
               <span>+</span>
             </AddToWatchlistButton>
             <GroupWatchButton>
-              <img src="/images/group-icon.png" />"
+              <img alt="" src="images/group-icon.png" />"
             </GroupWatchButton>
           </Controls>
           <SubTitle>{movie.subtitle}</SubTitle>

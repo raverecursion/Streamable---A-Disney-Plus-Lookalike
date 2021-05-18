@@ -2,6 +2,7 @@
   "name": "video-streaming",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^5.12.0",
