@@ -12,7 +12,8 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Login />
+            {/* <Login /> */}
+            <Home />
           </Route>
           <Route path="/home">
             <Home />
