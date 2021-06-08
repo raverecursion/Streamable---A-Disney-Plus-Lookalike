@@ -1,4 +1,4 @@
-# Yet Another Disney Lookalike
+# Streamable - Yet Another Disney Lookalike
 
 This is a fully functional Disney+ lookalike with streaming capabilities.
 
