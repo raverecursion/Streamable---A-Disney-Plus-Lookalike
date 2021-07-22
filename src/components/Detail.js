@@ -1,11 +1,13 @@
+import React from "react";
 import { useEffect, useState } from "react";
+
 import { useParams } from "react-router-dom";
-// Styles
+
 import styled from "styled-components";
-// Modal Video
+
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.min.css";
-// Database
+
 import db from "../firebase";
 
 // TODO:
@@ -13,7 +15,7 @@ import db from "../firebase";
 // Uncaught SyntaxError: Unexpected token '<'
 //
 
-const Detail = (props) => {
+const Detail = () => {
   const [isOpen, setOpen] = useState(false);
   const { id } = useParams();
   const [detailData, setDetailData] = useState({});

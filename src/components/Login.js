@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const Login = (props) => {
+import React from "react";
+const Login = () => {
   return (
     <Container>
       <Content>
