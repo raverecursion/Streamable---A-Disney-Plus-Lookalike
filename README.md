@@ -6,11 +6,11 @@ Simply add new entries via firebase (*youtube / vimeo / custom video support*)
 
 A database collection sample provided for an easy setup
 
-# Built with ReactJS 
+# Built with ReactJS
 
 ## <a href="https://streamable.netlify.app/" target="_blank">DEMO</a>
-![Alt text](/screenshot.png?raw=true "Screenshot")
 
+![Alt text](/screenshot.png?raw=true "Screenshot")
 
 # Installation
 
@@ -18,7 +18,6 @@ A database collection sample provided for an easy setup
 - import ```dbsample.json``` to your firebase store
 - ```npm install```
 - ```react-scripts start```
-
 
 ### Database description
 
@@ -36,9 +35,8 @@ trailerID: "i5qOzqD9Rms", "url/movietrailer.mp4"
 movieID: "i9qnzqD4Fms", "url/movie.mp4"
 ```
 
-
-
 ## Dependencies
+
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -62,12 +60,12 @@ movieID: "i9qnzqD4Fms", "url/movie.mp4"
     "styled-components": "^5.2.3",
     "web-vitals": "^1.0.1"
 
-
-
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

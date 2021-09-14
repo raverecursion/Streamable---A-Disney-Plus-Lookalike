@@ -2,11 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 
-import { setMovies } from '../features/movie/movieSlice';
+import {setMovies} from '../features/movie/movieSlice';
 
 function Movies() {
     const movies = useSelector(setMovies);
@@ -17,16 +17,16 @@ function Movies() {
             <h4>Recommended</h4>
             <Content>
                 {movies &&
-                    movies.map((movie) => (
-                        <Wrap key={movie.id}>
-                            <Link to={`/detail/${movie.id}`}>
-                                <img
-                                    alt={` ${movie.title} card }`}
-                                    src={movie.cardImg}
-                                />
-                            </Link>
-                        </Wrap>
-                    ))}
+                movies.map((movie) => (
+                    <Wrap key={movie.id}>
+                        <Link to={`/detail/${movie.id}`}>
+                            <img
+                                alt={` ${movie.title} card }`}
+                                src={movie.cardImg}
+                            />
+                        </Link>
+                    </Wrap>
+                ))}
             </Content>
         </Container>
     );
