@@ -4,7 +4,7 @@ specifiers:
   '@reduxjs/toolkit': 1.7.1
   '@testing-library/jest-dom': 5.16.1
   '@testing-library/react': 11.2.7
-  '@testing-library/user-event': 12.8.3
+  '@testing-library/user-event': 13.5.0
   ahooks: 2.10.14
   firebase: 8.9.1
   firebase-tools: 9.16.5
@@ -29,7 +29,7 @@ dependencies:
   '@reduxjs/toolkit': 1.7.1_react-redux@7.2.6+react@17.0.2
   '@testing-library/jest-dom': 5.16.1
   '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
-  '@testing-library/user-event': 12.8.3
+  '@testing-library/user-event': 13.5.0
   ahooks: 2.10.14_react@17.0.2
   firebase: 8.9.1
   firebase-tools: 9.16.5
@@ -2657,13 +2657,13 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@testing-library/user-event/12.8.3:
-    resolution: {integrity: sha512-IR0iWbFkgd56Bu5ZI/ej8yQwrkCv8Qydx6RzwbKz9faXazR/+5tvYKsZQgyXJiwgpcva127YO6JcWy7YlCfofQ==}
+  /@testing-library/user-event/13.5.0:
+    resolution: {integrity: sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
-      '@babel/runtime': 7.14.8
+      '@babel/runtime': 7.16.7
     dev: false
 
   /@tootallnate/once/1.1.2:
