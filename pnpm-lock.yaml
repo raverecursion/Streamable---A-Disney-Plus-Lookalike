@@ -7,7 +7,7 @@ specifiers:
   '@testing-library/user-event': 12.8.3
   ahooks: 2.10.14
   firebase: 8.10.0
-  firebase-tools: 9.16.5
+  firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
   plyr: 3.6.12
@@ -32,7 +32,7 @@ dependencies:
   '@testing-library/user-event': 12.8.3
   ahooks: 2.10.14_react@17.0.2
   firebase: 8.10.0
-  firebase-tools: 9.16.5
+  firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
   plyr: 3.6.12
@@ -4757,8 +4757,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /cli-table/0.3.6:
-    resolution: {integrity: sha512-ZkNZbnZjKERTY5NwC2SeMeLeifSPq/pubeRoTpdr3WchLlnZg6hEgvHkK5zL7KNFdd9PmHN8lxrENUwI3cE8vQ==}
+  /cli-table/0.3.11:
+    resolution: {integrity: sha512-IqLQi4lO0nIB4tcdTpN4LCB9FI3uqrJZK7RC515EnhZ6qBaglkIgICb1wjeAqpdoOabm1+SuQtkXIPdYC93jhQ==}
     engines: {node: '>= 0.2.0'}
     dependencies:
       colors: 1.0.3
@@ -5761,13 +5761,14 @@ packages:
       isobject: 3.0.1
     dev: false
 
-  /degenerator/2.2.0:
-    resolution: {integrity: sha512-aiQcQowF01RxFI4ZLFMpzyotbQonhNpBao6dkI8JPk5a+hmSjR5ErHp2CQySmQe8os3VBqLCIh87nDBgZXvsmg==}
+  /degenerator/3.0.1:
+    resolution: {integrity: sha512-LFsIFEeLPlKvAKXu7j3ssIG6RT0TbI7/GhsqrI0DnHASEQjXQ0LUSYcjJteGgRGmZbl1TnMSxpNQIAiJ7Du5TQ==}
     engines: {node: '>= 6'}
     dependencies:
       ast-types: 0.13.4
       escodegen: 1.14.3
       esprima: 4.0.1
+      vm2: 3.9.5
     dev: false
 
   /del/4.1.1:
@@ -7142,8 +7143,8 @@ packages:
       path-exists: 4.0.0
     dev: false
 
-  /firebase-tools/9.16.5:
-    resolution: {integrity: sha512-dp/cvt+39wv5CO+MzX36snmRnvn5j7Nn73QfKiIvHXAT5Ek/fRJn2pWnaxP+bhd19SuEY1Buf8PcdlMl42hzlw==}
+  /firebase-tools/9.23.3:
+    resolution: {integrity: sha512-J1S/T96rL3vKObDtTuBkop9JtW3vYnfwyU83NopiuOy9oPBRxFkitgzk034qGrpGyZvDA6Do6ZHI50taB3hrEg==}
     engines: {node: '>= 10.13'}
     hasBin: true
     dependencies:
@@ -7156,7 +7157,7 @@ packages:
       chokidar: 3.5.2
       cjson: 0.3.3
       cli-color: 1.4.0
-      cli-table: 0.3.6
+      cli-table: 0.3.11
       commander: 4.1.1
       configstore: 5.0.1
       cors: 2.8.5
@@ -7188,7 +7189,7 @@ packages:
       ora: 3.4.0
       portfinder: 1.0.28
       progress: 2.0.3
-      proxy-agent: 4.0.1
+      proxy-agent: 5.0.0
       request: 2.88.2
       rimraf: 3.0.2
       semver: 5.7.1
@@ -7201,7 +7202,7 @@ packages:
       universal-analytics: 0.4.23
       unzipper: 0.10.11
       update-notifier: 5.1.0
-      uuid: 3.4.0
+      uuid: 8.3.2
       winston: 3.3.3
       winston-transport: 4.4.0
       ws: 7.5.3
@@ -10184,7 +10185,7 @@ packages:
       ansi-escapes: 3.2.0
       cardinal: 2.1.1
       chalk: 2.4.2
-      cli-table: 0.3.6
+      cli-table: 0.3.11
       marked: 0.7.0
       node-emoji: 1.10.0
       supports-hyperlinks: 1.0.1
@@ -11316,9 +11317,9 @@ packages:
       p-timeout: 3.2.0
     dev: false
 
-  /pac-proxy-agent/4.1.0:
-    resolution: {integrity: sha512-ejNgYm2HTXSIYX9eFlkvqFp8hyJ374uDf0Zq5YUAifiSh1D6fo+iBivQZirGvVv8dCYUsLhmLBRhlAYvBKI5+Q==}
-    engines: {node: '>= 6'}
+  /pac-proxy-agent/5.0.0:
+    resolution: {integrity: sha512-CcFG3ZtnxO8McDigozwE3AqAw15zDvGH+OjXO4kzf7IkEKkQ4gxQ+3sdF50WmhQ4P/bVusXcqNE2S3XrNURwzQ==}
+    engines: {node: '>= 8'}
     dependencies:
       '@tootallnate/once': 1.1.2
       agent-base: 6.0.2
@@ -11326,18 +11327,18 @@ packages:
       get-uri: 3.0.2
       http-proxy-agent: 4.0.1
       https-proxy-agent: 5.0.0
-      pac-resolver: 4.2.0
+      pac-resolver: 5.0.0
       raw-body: 2.4.1
       socks-proxy-agent: 5.0.1
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /pac-resolver/4.2.0:
-    resolution: {integrity: sha512-rPACZdUyuxT5Io/gFKUeeZFfE5T7ve7cAkE5TUZRRfuKP0u5Hocwe48X7ZEm6mYB+bTB0Qf+xlVlA/RM/i6RCQ==}
-    engines: {node: '>= 6'}
+  /pac-resolver/5.0.0:
+    resolution: {integrity: sha512-H+/A6KitiHNNW+bxBKREk2MCGSxljfqRX76NjummWEYIat7ldVXRU3dhRIE3iXZ0nvGBk6smv3nntxKkzRL8NA==}
+    engines: {node: '>= 8'}
     dependencies:
-      degenerator: 2.2.0
+      degenerator: 3.0.1
       ip: 1.1.5
       netmask: 2.0.2
     dev: false
@@ -12446,16 +12447,16 @@ packages:
       ipaddr.js: 1.9.1
     dev: false
 
-  /proxy-agent/4.0.1:
-    resolution: {integrity: sha512-ODnQnW2jc/FUVwHHuaZEfN5otg/fMbvMxz9nMSUQfJ9JU7q2SZvSULSsjLloVgJOiv9yhc8GlNMKc4GkFmcVEA==}
-    engines: {node: '>=6'}
+  /proxy-agent/5.0.0:
+    resolution: {integrity: sha512-gkH7BkvLVkSfX9Dk27W6TyNOWWZWRilRfk1XxGNWOYJ2TuedAv1yFpCaU9QSBmBe716XOTNpYNOzhysyw8xn7g==}
+    engines: {node: '>= 8'}
     dependencies:
       agent-base: 6.0.2
       debug: 4.3.2
       http-proxy-agent: 4.0.1
       https-proxy-agent: 5.0.0
       lru-cache: 5.1.1
-      pac-proxy-agent: 4.1.0
+      pac-proxy-agent: 5.0.0
       proxy-from-env: 1.1.0
       socks-proxy-agent: 5.0.1
     transitivePeerDependencies:
@@ -15261,7 +15262,6 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
     dev: false
-    optional: true
 
   /v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
@@ -15311,6 +15311,12 @@ packages:
 
   /vm-browserify/1.1.2:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
+    dev: false
+
+  /vm2/3.9.5:
+    resolution: {integrity: sha512-LuCAHZN75H9tdrAiLFf030oW7nJV5xwNMuk1ymOZwopmuK3d2H4L1Kv4+GFHgarKiLfXXLFU+7LDABHnwOkWng==}
+    engines: {node: '>=6.0'}
+    hasBin: true
     dev: false
 
   /w3c-hr-time/1.0.2:
