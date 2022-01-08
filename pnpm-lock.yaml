@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@reduxjs/toolkit': 1.7.1
-  '@testing-library/jest-dom': 5.14.1
+  '@testing-library/jest-dom': 5.16.1
   '@testing-library/react': 11.2.7
   '@testing-library/user-event': 12.8.3
   ahooks: 2.10.14
@@ -27,7 +27,7 @@ specifiers:
 
 dependencies:
   '@reduxjs/toolkit': 1.7.1_react-redux@7.2.6+react@17.0.2
-  '@testing-library/jest-dom': 5.14.1
+  '@testing-library/jest-dom': 5.16.1
   '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 12.8.3
   ahooks: 2.10.14_react@17.0.2
@@ -2629,13 +2629,13 @@ packages:
       pretty-format: 26.6.2
     dev: false
 
-  /@testing-library/jest-dom/5.14.1:
-    resolution: {integrity: sha512-dfB7HVIgTNCxH22M1+KU6viG5of2ldoA5ly8Ar8xkezKHKXjRvznCdbMbqjYGgO2xjRbwnR+rR8MLUIqF3kKbQ==}
+  /@testing-library/jest-dom/5.16.1:
+    resolution: {integrity: sha512-ajUJdfDIuTCadB79ukO+0l8O+QwN0LiSxDaYUTI4LndbbUsGi6rWU1SCexXzBA2NSjlVB9/vbkasQIL3tmPBjw==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
-      '@babel/runtime': 7.14.8
+      '@babel/runtime': 7.16.7
       '@types/testing-library__jest-dom': 5.14.1
-      aria-query: 4.2.2
+      aria-query: 5.0.0
       chalk: 3.0.0
       css: 3.0.0
       css.escape: 1.5.1
@@ -3544,6 +3544,11 @@ packages:
     dependencies:
       '@babel/runtime': 7.16.7
       '@babel/runtime-corejs3': 7.14.8
+    dev: false
+
+  /aria-query/5.0.0:
+    resolution: {integrity: sha512-V+SM7AbUwJ+EBnB8+DXs0hPZHO0W6pqBcc0dW90OwtVG02PswOu/teuARoLQjdDOH+t9pJgGnW5/Qmouf3gPJg==}
+    engines: {node: '>=6.0'}
     dev: false
 
   /arity-n/1.0.4:
