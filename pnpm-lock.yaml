@@ -11,7 +11,7 @@ specifiers:
   netlify: 6.1.29
   node-sass: 6.0.1
   plyr: 3.6.12
-  plyr-react: 3.0.8
+  plyr-react: 3.2.1
   react: 17.0.2
   react-dom: 17.0.2
   react-modal-video: 1.2.8
@@ -36,7 +36,7 @@ dependencies:
   netlify: 6.1.29
   node-sass: 6.0.1
   plyr: 3.6.12
-  plyr-react: 3.0.8_react-dom@17.0.2+react@17.0.2
+  plyr-react: 3.2.1_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-modal-video: 1.2.8_react-dom@17.0.2+react@17.0.2
@@ -11580,12 +11580,12 @@ packages:
       find-up: 3.0.0
     dev: false
 
-  /plyr-react/3.0.8_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-gIDlmEHCox8B7FzY+/MK1JrY99sUcr4a7zHR28Ya0Dui4KCnnbLtKEG44AGxSevaFzfH2DgdCsJ9uHQVtTRcJQ==}
+  /plyr-react/3.2.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-ZXMA+d837mZCkb68oTXso6rH8O+B2+A7t8ux1fdU+kFSUh1NZa1/iuItItFgScmVC6FoO3DNj+FkZP2aikxoKg==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
-      react: ^16.13.1
-      react-dom: ^16.13.1
+      react: ^16.13.0  || ^17.0.0
+      react-dom: ^16.13.0  || ^17.0.0
     dependencies:
       plyr: 3.6.12
       react: 17.0.2
