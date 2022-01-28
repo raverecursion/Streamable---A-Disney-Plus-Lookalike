@@ -9,7 +9,7 @@
     "@testing-library/react": "11.2.7",
     "@testing-library/user-event": "12.8.3",
     "ahooks": "2.10.14",
-    "firebase": "8.10.0",
+    "firebase": "9.6.5",
     "firebase-tools": "9.23.3",
     "netlify": "6.1.29",
     "node-sass": "6.0.1",
