@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@reduxjs/toolkit': 1.8.0
-  '@testing-library/jest-dom': 5.16.2
+  '@testing-library/jest-dom': 5.16.3
   '@testing-library/react': 11.2.7
   '@testing-library/user-event': 12.8.3
   ahooks: 2.10.14
@@ -27,7 +27,7 @@ specifiers:
 
 dependencies:
   '@reduxjs/toolkit': 1.8.0_react-redux@7.2.6+react@17.0.2
-  '@testing-library/jest-dom': 5.16.2
+  '@testing-library/jest-dom': 5.16.3
   '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 12.8.3
   ahooks: 2.10.14_react@17.0.2
@@ -2637,8 +2637,8 @@ packages:
       pretty-format: 26.6.2
     dev: false
 
-  /@testing-library/jest-dom/5.16.2:
-    resolution: {integrity: sha512-6ewxs1MXWwsBFZXIk4nKKskWANelkdUehchEOokHsN8X7c2eKXGw+77aRV63UU8f/DTSVUPLaGxdrj4lN7D/ug==}
+  /@testing-library/jest-dom/5.16.3:
+    resolution: {integrity: sha512-u5DfKj4wfSt6akfndfu1eG06jsdyA/IUrlX2n3pyq5UXgXMhXY+NJb8eNK/7pqPWAhCKsCGWDdDO0zKMKAYkEA==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.16.7
