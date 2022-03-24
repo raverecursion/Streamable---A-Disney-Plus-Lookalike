@@ -26,7 +26,7 @@
     "sass": "1.49.9",
     "slick-carousel": "1.8.1",
     "styled-components": "5.3.5",
-    "web-vitals": "1.1.2"
+    "web-vitals": "2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

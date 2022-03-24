@@ -23,7 +23,7 @@ specifiers:
   sass: 1.49.9
   slick-carousel: 1.8.1
   styled-components: 5.3.5
-  web-vitals: 1.1.2
+  web-vitals: 2.1.4
 
 dependencies:
   '@reduxjs/toolkit': 1.8.0_react-redux@7.2.6+react@17.0.2
@@ -48,7 +48,7 @@ dependencies:
   sass: 1.49.9
   slick-carousel: 1.8.1
   styled-components: 5.3.5_react-dom@17.0.2+react@17.0.2
-  web-vitals: 1.1.2
+  web-vitals: 2.1.4
 
 packages:
 
@@ -15409,8 +15409,8 @@ packages:
       defaults: 1.0.3
     dev: false
 
-  /web-vitals/1.1.2:
-    resolution: {integrity: sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==}
+  /web-vitals/2.1.4:
+    resolution: {integrity: sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==}
     dev: false
 
   /webidl-conversions/3.0.1:
