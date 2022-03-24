@@ -22,7 +22,7 @@ specifiers:
   react-slick: 0.28.1
   sass: 1.49.9
   slick-carousel: 1.8.1
-  styled-components: 5.3.3
+  styled-components: 5.3.5
   web-vitals: 1.1.2
 
 dependencies:
@@ -47,7 +47,7 @@ dependencies:
   react-slick: 0.28.1_react-dom@17.0.2+react@17.0.2
   sass: 1.49.9
   slick-carousel: 1.8.1
-  styled-components: 5.3.3_react-dom@17.0.2+react@17.0.2
+  styled-components: 5.3.5_react-dom@17.0.2+react@17.0.2
   web-vitals: 1.1.2
 
 packages:
@@ -1606,8 +1606,8 @@ packages:
       kuler: 2.0.0
     dev: false
 
-  /@emotion/is-prop-valid/0.8.8:
-    resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
+  /@emotion/is-prop-valid/1.1.2:
+    resolution: {integrity: sha512-3QnhqeL+WW88YjYbQL5gUIkthuMw7a0NGbZ7wfFVk2kg/CK5w8w5FFa0RzWjyY1+sujN0NWbtSHH6OJmWHtJpQ==}
     dependencies:
       '@emotion/memoize': 0.7.4
     dev: false
@@ -3937,7 +3937,7 @@ packages:
       - supports-color
     dev: false
 
-  /babel-plugin-styled-components/1.13.2_styled-components@5.3.3:
+  /babel-plugin-styled-components/1.13.2_styled-components@5.3.5:
     resolution: {integrity: sha512-Vb1R3d4g+MUfPQPVDMCGjm3cDocJEUTR7Xq7QS95JWWeksN1wdFRYpD2kulDgI3Huuaf1CZd+NK4KQmqUFh5dA==}
     peerDependencies:
       styled-components: '>= 2'
@@ -3946,7 +3946,7 @@ packages:
       '@babel/helper-module-imports': 7.14.5
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
-      styled-components: 5.3.3_react-dom@17.0.2+react@17.0.2
+      styled-components: 5.3.5_react-dom@17.0.2+react@17.0.2
     dev: false
 
   /babel-plugin-syntax-jsx/6.18.0:
@@ -14376,9 +14376,10 @@ packages:
       webpack: 4.44.2
     dev: false
 
-  /styled-components/5.3.3_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-++4iHwBM7ZN+x6DtPPWkCI4vdtwumQ+inA/DdAsqYd4SVgUKJie5vXyzotA00ttcFdQkCng7zc6grwlfIfw+lw==}
+  /styled-components/5.3.5_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-ndETJ9RKaaL6q41B69WudeqLzOpY1A/ET/glXkNZ2T7dPjPqpPCXXQjDFYZWwNnE5co0wX+gTCqx9mfxTmSIPg==}
     engines: {node: '>=10'}
+    requiresBuild: true
     peerDependencies:
       react: '>= 16.8.0'
       react-dom: '>= 16.8.0'
@@ -14386,10 +14387,10 @@ packages:
     dependencies:
       '@babel/helper-module-imports': 7.14.5
       '@babel/traverse': 7.14.8_supports-color@5.5.0
-      '@emotion/is-prop-valid': 0.8.8
+      '@emotion/is-prop-valid': 1.1.2
       '@emotion/stylis': 0.8.5
       '@emotion/unitless': 0.7.5
-      babel-plugin-styled-components: 1.13.2_styled-components@5.3.3
+      babel-plugin-styled-components: 1.13.2_styled-components@5.3.5
       css-to-react-native: 3.0.0
       hoist-non-react-statics: 3.3.2
       react: 17.0.2
