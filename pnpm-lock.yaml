@@ -10,7 +10,7 @@ specifiers:
   firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
-  plyr: 3.6.12
+  plyr: 3.7.0
   plyr-react: 3.2.1
   react: 17.0.2
   react-dom: 17.0.2
@@ -35,7 +35,7 @@ dependencies:
   firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
-  plyr: 3.6.12
+  plyr: 3.7.0
   plyr-react: 3.2.1_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -5117,8 +5117,8 @@ packages:
     requiresBuild: true
     dev: false
 
-  /core-js/3.20.2:
-    resolution: {integrity: sha512-nuqhq11DcOAbFBV4zCbKeGbKQsUDRqTX0oqx7AttUBuqe3h20ixsE039QHelbL6P4h+9kytVqyEtyZ6gsiwEYw==}
+  /core-js/3.22.0:
+    resolution: {integrity: sha512-8h9jBweRjMiY+ORO7bdWSeWfHhLPO7whobj7Z2Bl0IDo00C228EdGgH7FE4jGumbEjzcFfkfW8bXgdkEDhnwHQ==}
     requiresBuild: true
     dev: false
 
@@ -11619,15 +11619,15 @@ packages:
       react: ^16.13.0  || ^17.0.0
       react-dom: ^16.13.0  || ^17.0.0
     dependencies:
-      plyr: 3.6.12
+      plyr: 3.7.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /plyr/3.6.12:
-    resolution: {integrity: sha512-42WhYpMS/FEyX2unSEvhYtj1RvJgWvOsjZQFDongOQHA4eVzsyr7b06bzVpinMAOVC9e5H7RCbK+6CCAFIl2VQ==}
+  /plyr/3.7.0:
+    resolution: {integrity: sha512-2RQWKWE4yprvM+TSQGccE41hUE4eoCrp4cOAgnajt1RA46pjN4nT6LwbRe4ZhAhj/XevEObP6m420SW40IcQOw==}
     dependencies:
-      core-js: 3.20.2
+      core-js: 3.22.0
       custom-event-polyfill: 1.0.7
       loadjs: 4.2.0
       rangetouch: 2.0.1
@@ -12694,7 +12694,7 @@ packages:
     resolution: {integrity: sha512-0sF4ny9v/B7s6aoehwze9vJNWcmCemAUYBVasscVr92+UYiEqDXOxfKjXN685mDaMRNF3WdhHQs76oTODMocFA==}
     engines: {node: '>=10'}
     dependencies:
-      core-js: 3.20.2
+      core-js: 3.22.0
       object-assign: 4.1.1
       promise: 8.1.0
       raf: 3.4.1
@@ -12775,7 +12775,7 @@ packages:
     peerDependencies:
       react: 16.x
     dependencies:
-      plyr: 3.6.12
+      plyr: 3.7.0
       prop-types: 15.7.2
       react: 17.0.2
     dev: false
