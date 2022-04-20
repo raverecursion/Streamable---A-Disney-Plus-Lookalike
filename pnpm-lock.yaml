@@ -10,7 +10,7 @@ specifiers:
   firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
-  plyr: 3.7.0
+  plyr: 3.7.2
   plyr-react: 3.2.1
   react: 17.0.2
   react-dom: 17.0.2
@@ -35,7 +35,7 @@ dependencies:
   firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
-  plyr: 3.7.0
+  plyr: 3.7.2
   plyr-react: 3.2.1_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -11619,13 +11619,13 @@ packages:
       react: ^16.13.0  || ^17.0.0
       react-dom: ^16.13.0  || ^17.0.0
     dependencies:
-      plyr: 3.7.0
+      plyr: 3.7.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /plyr/3.7.0:
-    resolution: {integrity: sha512-2RQWKWE4yprvM+TSQGccE41hUE4eoCrp4cOAgnajt1RA46pjN4nT6LwbRe4ZhAhj/XevEObP6m420SW40IcQOw==}
+  /plyr/3.7.2:
+    resolution: {integrity: sha512-I0ZC/OI4oJ0iWG9s2rrnO0YFO6aLyrPiQBq9kum0FqITYljwTPBbYL3TZZu8UJQJUq7tUWN18Q7ACwNCkGKABQ==}
     dependencies:
       core-js: 3.22.0
       custom-event-polyfill: 1.0.7
@@ -12775,7 +12775,7 @@ packages:
     peerDependencies:
       react: 16.x
     dependencies:
-      plyr: 3.7.0
+      plyr: 3.7.2
       prop-types: 15.7.2
       react: 17.0.2
     dev: false
