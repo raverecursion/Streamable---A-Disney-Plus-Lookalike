@@ -14,7 +14,7 @@ specifiers:
   plyr-react: 3.2.1
   react: 17.0.2
   react-dom: 17.0.2
-  react-modal-video: 1.2.8
+  react-modal-video: 1.2.9
   react-plyr: 2.2.0
   react-redux: 7.2.8
   react-router-dom: ^5.2.0
@@ -39,7 +39,7 @@ dependencies:
   plyr-react: 3.2.1_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  react-modal-video: 1.2.8_react-dom@17.0.2+react@17.0.2
+  react-modal-video: 1.2.9_react-dom@17.0.2+react@17.0.2
   react-plyr: 2.2.0_react@17.0.2
   react-redux: 7.2.8_react-dom@17.0.2+react@17.0.2
   react-router-dom: 5.2.0_react@17.0.2
@@ -13296,8 +13296,8 @@ packages:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
     dev: false
 
-  /react-modal-video/1.2.8_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-RWOxr1l8Ovk97O80xKKzmIR+D2wPmI5KgNDsxJbW7lA+k0iYmn/5cbPczfTbYQy/qmHfZho16zi2rJ7oLdCQBQ==}
+  /react-modal-video/1.2.9_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-hRjmRzTKEtEFWTG0STvc+JUHscryGQMQq/y8ghbk5f/e8Wptuy3GlPNT8xqOGpXjyCzVtOB8sy7t0h5HdzMu8g==}
     peerDependencies:
       react: ^16.2.0 || ^17.0.0
       react-dom: ^16.2.0 || ^17.0.0
