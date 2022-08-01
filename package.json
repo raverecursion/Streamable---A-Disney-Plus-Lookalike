@@ -11,7 +11,7 @@
     "ahooks": "2.10.14",
     "firebase": "8.10.1",
     "firebase-tools": "9.23.3",
-    "netlify": "6.1.29",
+    "netlify": "11.0.0",
     "node-sass": "6.0.1",
     "plyr": "3.7.2",
     "plyr-react": "3.2.1",
