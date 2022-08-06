@@ -7,7 +7,7 @@
     "@reduxjs/toolkit": "1.8.3",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "11.2.7",
-    "@testing-library/user-event": "12.8.3",
+    "@testing-library/user-event": "14.4.2",
     "ahooks": "2.10.14",
     "firebase": "8.10.1",
     "firebase-tools": "9.23.3",
