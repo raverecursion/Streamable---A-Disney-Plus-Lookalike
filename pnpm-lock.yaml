@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@reduxjs/toolkit': 1.8.4
+  '@reduxjs/toolkit': 1.8.5
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 11.2.7
   '@testing-library/user-event': 12.8.3
@@ -26,7 +26,7 @@ specifiers:
   web-vitals: 1.1.2
 
 dependencies:
-  '@reduxjs/toolkit': 1.8.4_react-redux@7.2.8+react@17.0.2
+  '@reduxjs/toolkit': 1.8.5_react-redux@7.2.8+react@17.0.2
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 12.8.3
@@ -2588,8 +2588,8 @@ packages:
     resolution: {integrity: sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=}
     dev: false
 
-  /@reduxjs/toolkit/1.8.4_react-redux@7.2.8+react@17.0.2:
-    resolution: {integrity: sha512-IpFq1WI7sCYeLQpDCGvlcQY9wn70UpAM3cOLq78HRnVn1746RI+l3y5xcuOeVOxORaxABJh3cfJMxycD2IwH5w==}
+  /@reduxjs/toolkit/1.8.5_react-redux@7.2.8+react@17.0.2:
+    resolution: {integrity: sha512-f4D5EXO7A7Xq35T0zRbWq5kJQyXzzscnHKmjnu2+37B3rwHU6mX9PYlbfXdnxcY6P/7zfmjhgan0Z+yuOfeBmA==}
     peerDependencies:
       react: ^16.9.0 || ^17.0.0 || ^18
       react-redux: ^7.2.1 || ^8.0.2
