@@ -20,7 +20,7 @@
     "react-modal-video": "1.2.10",
     "react-plyr": "2.2.0",
     "react-redux": "7.2.9",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.0.0",
     "react-scripts": "4.0.3",
     "react-slick": "0.29.0",
     "sass": "1.56.1",
