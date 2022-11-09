@@ -16,7 +16,7 @@
     "plyr": "3.7.2",
     "plyr-react": "3.2.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react-dom": "18.2.0",
     "react-modal-video": "1.2.10",
     "react-plyr": "2.2.0",
     "react-redux": "7.2.9",
