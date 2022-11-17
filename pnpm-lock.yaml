@@ -10,7 +10,7 @@ specifiers:
   firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
-  plyr: 3.7.2
+  plyr: 3.7.3
   plyr-react: 3.2.1
   react: 17.0.2
   react-dom: 17.0.2
@@ -35,7 +35,7 @@ dependencies:
   firebase-tools: 9.23.3
   netlify: 6.1.29
   node-sass: 6.0.1
-  plyr: 3.7.2
+  plyr: 3.7.3
   plyr-react: 3.2.1_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -5290,17 +5290,18 @@ packages:
 
   /core-js/2.6.12:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
-    deprecated: core-js@<3.4 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
     requiresBuild: true
     dev: false
 
-  /core-js/3.22.0:
-    resolution: {integrity: sha512-8h9jBweRjMiY+ORO7bdWSeWfHhLPO7whobj7Z2Bl0IDo00C228EdGgH7FE4jGumbEjzcFfkfW8bXgdkEDhnwHQ==}
+  /core-js/3.26.1:
+    resolution: {integrity: sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==}
     requiresBuild: true
     dev: false
 
   /core-js/3.6.5:
     resolution: {integrity: sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
     requiresBuild: true
     dev: false
 
@@ -12024,15 +12025,15 @@ packages:
       react: ^16.13.0  || ^17.0.0
       react-dom: ^16.13.0  || ^17.0.0
     dependencies:
-      plyr: 3.7.2
+      plyr: 3.7.3
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /plyr/3.7.2:
-    resolution: {integrity: sha512-I0ZC/OI4oJ0iWG9s2rrnO0YFO6aLyrPiQBq9kum0FqITYljwTPBbYL3TZZu8UJQJUq7tUWN18Q7ACwNCkGKABQ==}
+  /plyr/3.7.3:
+    resolution: {integrity: sha512-ORULENBvEvvzMYXRQBALDmEi8P+wZt1Hr/NvHqchu/t7E2xJKNkRYWx0qCA1HETIGZ6zobrOVgqeAUqWimS7fQ==}
     dependencies:
-      core-js: 3.22.0
+      core-js: 3.26.1
       custom-event-polyfill: 1.0.7
       loadjs: 4.2.0
       rangetouch: 2.0.1
@@ -13129,7 +13130,7 @@ packages:
     resolution: {integrity: sha512-0sF4ny9v/B7s6aoehwze9vJNWcmCemAUYBVasscVr92+UYiEqDXOxfKjXN685mDaMRNF3WdhHQs76oTODMocFA==}
     engines: {node: '>=10'}
     dependencies:
-      core-js: 3.22.0
+      core-js: 3.26.1
       object-assign: 4.1.1
       promise: 8.1.0
       raf: 3.4.1
@@ -13216,7 +13217,7 @@ packages:
     peerDependencies:
       react: 16.x
     dependencies:
-      plyr: 3.7.2
+      plyr: 3.7.3
       prop-types: 15.7.2
       react: 17.0.2
     dev: false
